@@ -2,6 +2,7 @@
 
 import Head from "next/head";
 import Navbar from "../../components/Navbar";
+import { Hero } from "../../components/Hero";
 
 export default function Home() {
   return (
@@ -18,24 +19,8 @@ export default function Home() {
       <Navbar />
 
       <main className="flex-grow">
-        <section className="relative h-screen">
-          <video
-            className="absolute inset-0 w-full h-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-            controls
-          >
-            <source src="/videos/video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
-            <h1 className="text-4xl md:text-6xl font-bold text-white text-center">
-              Welcome to Zara-restaurant
-            </h1>
-          </div>
-        </section>
+        
+        <Hero/>
       </main>
     </div>
   );
